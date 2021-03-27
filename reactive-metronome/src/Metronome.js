@@ -3,7 +3,7 @@ import './Metronome.css';
 
 class Metronome extends Component {
     render() {
-        const bpm = 100;
+        const bpm = 150;
         const playing = false;
 
         return (
