@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import './Metronome.css';
 
 class Metronome extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            playing: false,
+            count: 0,
+            bpm: 150,
+            beatsPerMeasure: 4
+        };
+    }
+
     render() {
         const bpm = 150;
         const playing = false;
