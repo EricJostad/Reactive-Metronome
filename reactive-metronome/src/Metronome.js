@@ -14,17 +14,28 @@ class Metronome extends Component {
         };
     }
 
+    handleBpmChange = event => {
+        const bpm = event.target.value;
+        this.setState({ bpm });
+    }
+
     render() {
-        const bpm = 150;
-        const playing = false;
+        const { playing, bpm } = this.state;
 
         return (
             <div className='metronome'>
                 <div className='bpm-slider'>
                     <div>{bpm} BPM</div>
-                    <input type='range' min='10' max='300' value={bpm} />
+                    <input
+                        type='range'
+                        min='10'
+                        max='300'
+                        value={bpm}
+                        onChange={this.handleBpmChange} />
                 </div>
-                <button>{playing ? 'Stop' : 'Start'}</button>
+                <button>
+                    {playing ? 'Stop' : 'Start'}
+                </button>
             </div>
         )
     }
