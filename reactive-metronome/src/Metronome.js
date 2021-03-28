@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import click1 from './assets/click1.wav';
+import click2 from './assets/click2.wav';
 import './Metronome.css';
 
 class Metronome extends Component {
@@ -12,6 +14,9 @@ class Metronome extends Component {
             bpm: 150,
             beatsPerMeasure: 4
         };
+
+        this.click1 = new Audio(click1);
+        this.click2 = new Audio(click2);
     }
 
     handleBpmChange = event => {
