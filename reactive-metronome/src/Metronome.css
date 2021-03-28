@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(217, 220, 223);
+  }
+
 .metronome {
     text-align: center;
     max-width: 400px;
@@ -10,12 +14,17 @@
     margin: 10px;
 }
 
+.bpm-text {
+    font-size: 25px;
+}
+
 .metronome button {
     background: #4d6375;
     padding: 10px;
-    border: 2px solid #a7a4a4;
+    border: 2px solid #2c2d2e;
     border-radius: 5%;
     width: 100px;
     color: #fff;
     font-size: 20px;
+    box-shadow: 5px 5px 5px #888888;
 }
