@@ -45,4 +45,4 @@ Main Page
 
 
 ### Authors
-- Eric Jostad https://github.com/EJostad
+- Eric Jostad | https://github.com/EJostad | eric.jostad@outlook.com | 407-409-0064
